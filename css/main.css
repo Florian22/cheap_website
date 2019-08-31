@@ -1,0 +1,421 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+   .hidden {
+   	display: none !important;
+   	visibility: hidden;
+   }
+
+   .visuallyhidden {
+   	border: 0;
+   	clip: rect(0 0 0 0);
+   	height: 1px;
+   	margin: -1px;
+   	overflow: hidden;
+   	padding: 0;
+   	position: absolute;
+   	width: 1px;
+   }
+
+   .visuallyhidden.focusable:active,
+   .visuallyhidden.focusable:focus {
+   	clip: auto;
+   	height: auto;
+   	margin: 0;
+   	overflow: visible;
+   	position: static;
+   	width: auto;
+   }
+
+   .invisible {
+   	visibility: hidden;
+   }
+
+   .clearfix:before,
+   .clearfix:after {
+   	content: " ";
+   	display: table;
+   }
+
+   .clearfix:after {
+   	clear: both;
+   }
+
+   .clearfix {
+   	*zoom: 1;
+   }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+   h2{
+   	color: white;
+   	font-family: "Verdana", Geneva, sans-serif;
+   }
+
+
+
+
+  /* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+   * {
+   	box-sizing: border-box;
+   }
+
+   .col-1 {width: 8.33%;}
+   .col-2 {width: 16.66%;}
+   .col-3 {width: 25%;}
+   .col-4 {width: 33.33%;}
+   .col-5 {width: 41.66%;}
+   .col-6 {width: 50%;}
+   .col-7 {width: 58.33%;}
+   .col-8 {width: 66.66%;}
+   .col-9 {width: 75%;}
+   .col-10 {width: 83.33%;}
+   .col-11 {width: 91.66%;}
+   .col-12 {width: 100%;}
+
+   [class*="col-"] {
+   	float: left;
+   	/*padding: 0.0em;*/
+   	/*border: 1px solid white;*/
+   }
+
+   .desktop{
+   	visibility: hidden;
+   }
+
+   @media only screen and (max-width: 768px) {
+   	ul div [class*="col-"] {
+    width: 50%;
+	}
+
+	.contact:hover{
+   	animation: none!important;
+   }
+
+	p{
+		margin-right:2%; 
+		margin-left:2%;
+	}
+
+   	[class*="col-"] {
+    width: 100%;
+	}
+
+	.container_Contact{
+   	margin: auto;
+   }
+
+   .empty{
+   	visibility: hidden;
+   	   	width: 0%;
+   	height: 0em;
+   }
+
+   .mobile{
+   	visibility: hidden;
+   	width: 0%;
+   	height: 0em;
+   }
+
+   .desktop{
+   	visibility: visible;
+   }
+
+   .School{
+   	text-align: center;
+   }
+
+
+   nav li:hover/*:not(.active)*/ {
+   	background-color: inherit;
+   }
+
+   }
+
+   .row:after {
+   	content: "";
+   	clear: both;
+   	display: block;
+   }
+
+   .row{
+   	margin: 0em;
+   	padding: 0em;
+   }
+
+   .container{
+   	max-width: 960px;
+   /*	margin: 8% 10%;*/
+   }
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+   body{
+
+   	background-color: #111; /*Bug ligne blanche si pas ça*/
+
+   }
+
+   body::-webkit-scrollbar { /*Hide scrollBar*/
+    display: none; 
+}
+
+   nav {
+   	background-color: #333;
+
+
+   }
+
+   nav ul {
+   	list-style-type: none;
+   	overflow: hidden;
+   	margin: 0.0em; /*Colle la barre au haut de page*/
+
+   }
+
+   nav ul a{
+   	float: left;
+   	/*margin-right: 0.0em;*/
+   	font-family: "Verdana", Geneva, sans-serif;
+   	font-size: 1em;
+   	text-decoration: none;
+   	color: white;
+   	padding: 0.8em;
+
+   }
+
+   nav li {
+   	float: right;
+   	margin: auto;
+   }
+
+   nav li a {
+   	float: initial;
+   	display: block;
+   	margin:auto;
+   	font-family: "Verdana", Geneva, sans-serif;
+   	color: white;
+   	
+   }
+
+   nav li:hover/*:not(.active)*/ {
+   	background-color: #111;
+   }
+
+   .active {
+   	text-decoration: none;
+   	display: block;
+   	font-family: "Verdana", Geneva, sans-serif;
+   	color: white;
+   	border: 0.1em solid white;
+   }
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+   .container_Contact{
+   	background-color: #111;
+   	margin: 8% 12% auto;
+   }
+ /*  a .contact{
+   	text-decoration: none;
+   	font-family: "Verdana", Geneva, sans-serif;
+   	color: white;
+   	padding: 0.2em 0.2em 0.2em 0.2em;
+   }*/
+   .contact{
+   	display: block;
+   	/*height: 2em;*/
+   	padding: 0.4em;
+   	margin: 0.4em;
+   	border: 0.1em solid white;
+   	/*text-align: center;*/
+   	text-decoration: none;
+   	font-family: "Verdana", Geneva, sans-serif;
+   	color: white;
+   }
+
+   .contact:hover{
+   	animation: shake .5s ease-in-out;
+   }
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-5px);
+  }
+
+  40% {
+    transform: translateX(5px);
+  }
+
+  60% {
+    transform: translateX(-5px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+   .container h1{
+   	text-decoration: underline;
+   	color: white;
+   	font-family: "Verdana", Geneva, sans-serif;
+   	font-size: 1.2em;
+   }
+
+   #map{
+   	/*width: 32em;*/ 
+   	height: 16em;
+   	margin-top: 2em;
+   	padding: 0.2em 0.2em 0.2em 0.2em;
+   	border: 0.4em solid white;
+   }
+
+   #world-map{
+   	display: block;
+   height:100%;
+  width:100%;
+   }
+
+   .empty{
+   		height: 1em;
+   }
+
+   .separator{
+height:2px;
+width: 50%;
+margin-left:auto;
+margin-right:auto;
+margin-top:1%;
+margin-bottom:3%;
+background:#333;
+border-bottom:2px solid #313030;
+   }
+
+/* ==========================================================================
+   home
+   ========================================================================== */
+
+.circleDiv {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 8em;
+    height: 8em;
+}
+
+p{
+	text-align: left;
+	color: white;
+}
+
+.form{
+	margin-top:0.2em;
+	margin-bottom:0.2em;
+}
+
+.tab{
+	margin-left: 20px;
+}
+
+ .container_Home{
+   	background-color: #111;
+   	margin: 10% 15%;
+   }
+  .center{
+  	text-align:center;
+  	margin-right: auto;
+  	margin-left: auto;
+  	margin-top: 4%;
+  	margin-bottom: auto;
+
+  }
+
+  .right{
+  	text-align: right;
+  }
+
+  .left{
+  	text-align: left;
+  }
+
+  .enum{
+  	list-style-type:circle;
+  	color: white;
+  }
+
+  .menuManager{
+  	float: right;
+  	text-align: center;
+  }
+
+  /* ==========================================================================
+   Formation
+   ========================================================================== */
+.circleSmallDiv {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 4em;
+    height: 4em;
+}
+
+
+
+/* ==========================================================================
+   Nav toggle
+   ========================================================================== */
+#nav-toggle { 
+	cursor: pointer; 
+	padding-right: 50px;
+	padding-top: 20px;
+	float: right;
+}
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+.jvectormap-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    touch-action: none;
+}
